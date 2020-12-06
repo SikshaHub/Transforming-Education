@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Navigation Bar - Display Horizontal */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+/* Left Navigation Bar - Contains Menus */
+.leftNav {
+    width: 50%;
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    padding: 0.3em;
+}
+
+/* Right Navigation Bar - Contains Search */
+.rightNav {
+    width: 50%;
+    /* background: lightcoral; */
+    text-align: right;
+}
+
+/* Logo - Reduce width and border-circle */
+.logo {
+    margin: auto;
+}
+
+.logo img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+
+/* Removes bullet from Menus */
+.navBar .leftNav li {
+    list-style: none;
+}
+
+/* Remove underline from Menus */
+.navBar .leftNav li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2em;
+}
+
+/* Change color to lightblue on hover */
+.navBar .leftNav li a:hover {
+    color: lightblue;
+}
+
+/* style search textbox */
+#search {
+    padding: 0.5em;
+    border: 2px solid gray;
+    border-radius: 0.5em;
+    font-size: 1rem;
+}
+
+/* Navigation Bar background image and settings */
+.background {
+    background: rgba(0, 0, 0, 0.3) url('../img/delhi_riots.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* Take entire viewport height */
+.firstSection {
+    height: 100vh;
+    padding-top: 15em;
+}
+
+/* Resize width of first and second section
+for justify-content to work */
+.firstSection .box-main .firstHalf {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstSection .box-main .secondHalf {
+    width: 20%;
+}
+
+/* First Section flex */
+.firstSection .box-main {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-family:  monospace;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Resize image of first Section */
+.firstSection .box-main .secondHalf img {
+    width: 180%;
+    border: 1px solid whitesmoke;
+    border-radius: 2em;
+}
+
+/* Resize paragraph fonts */
+.firstSection .box-main .firstHalf .text-big {
+    font-size: 2em;
+}
+
+.firstSection .box-main .firstHalf .text-small {
+    font-size: 1.2em;
+}
